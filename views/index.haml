@@ -1,0 +1,11 @@
+!!!
+%html
+	%head
+		%title Ciao!
+	%body
+		%h1 Hola
+		%p
+			- rows.each do |r|
+				%p
+					%b== Hello #{r["name"]}
+					== "#{r["idea"]}" is a great idea!
