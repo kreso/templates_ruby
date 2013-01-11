@@ -33,6 +33,6 @@ class App_Sinatra < Sinatra::Base
 	end
 
 	get "/mustache" do	
-		mustache :index #, :locals => {:rows => @@rows}
+		mustache :index, :locals => {:rows => @@rows}
 	end
 end
