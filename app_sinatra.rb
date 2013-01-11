@@ -4,25 +4,20 @@ require "haml"
 require "mustache/sinatra"
 
 
-class App_Sinatra < Sinatra::Base
+class App < Sinatra::Base
 	register Mustache::Sinatra
 	require "./views/layout"
-=begin
+#=begin
 	set :mustache, {
 		:views => './views/',
 		:templates => './views/'
 	}
-=end
+#=end
 	@@rows = [
 		{"name"=>"Chris", "idea"=>"Space"},
 		{"name"=>"Bill", "idea"=>"Time"},
 		{"name"=>"Jane", "idea"=>"The Rest"}
 	]
-
-	set :mustache, {
-		:templates => File.dirname(__FILE__) + '/views',
-		:views => File.dirname(__FILE__) + '/views'
-	}
 
 	get "/" do	
 		"ROOT"

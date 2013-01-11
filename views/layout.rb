@@ -1,8 +1,8 @@
-class App_Sinatra
+class App
   module Views
     class Layout < Mustache
       def title 
-        @title || "Trust the Stache"
+        @title || "Mustache"
       end
     end
   end

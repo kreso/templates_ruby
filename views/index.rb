@@ -1,9 +1,9 @@
-class App_Sinatra
+class App
 	module Views
 		class Index < Layout
 			def content
-				"From Index"
-			end
+		        "Ciao!"
+		    end
 		end
 	end
 end
